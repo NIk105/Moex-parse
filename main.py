@@ -41,7 +41,7 @@ def send_mail(subject, text, mail_to, file, isTls=True, settings=None):
     msg.attach(part)
 
     with smtplib.SMTP_SSL('smtp.mail.ru', 465) as server:
-        server.login('admin.vs@mail.ru', 'TGcmwdYfthypATV25wgB')
+        server.login('admin.vs@mail.ru', '******')
         server.sendmail('admin.vs@mail.ru', mail_to, msg.as_string())
         print("Successfully sent email")
 
